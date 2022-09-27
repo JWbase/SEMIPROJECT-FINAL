@@ -1,0 +1,75 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+}
+.qnaWrite-wrap{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.qnaWrite-content{
+    width: 1200px;
+    height:750px;
+    padding-top: 140px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 30px;
+}
+.qnaWrite-top{
+    border: 1px solid black;
+    padding: 0;
+    height: 35px;
+    background-color: black;
+    color: white;
+}
+.qnaWrite-Frm{
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.qnaWrite-topTitle{
+    width: 750px;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: 900px;
+    height: 50px;
+    line-height: 50px;
+}
+.qnaWrite-Frm tr td{
+    width: 150px;
+    border: 1px solid rgba(1, 1, 1, 0.3);
+    padding: 0;
+    height: 30px;
+    text-align: center;
+}
+#qnaWrite-area{
+    resize: none;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+#qna-CateNo{
+    height: 28px;
+}
+.qna-Write-Btn{
+    width: 50%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid rgba(1, 1, 1, 0.3);
+    cursor: pointer;
+}
+.qna-Write-Btn:hover{
+    background-color: #5865f5;
+    color: white;
+}
+.qnaWrite-sub{
+    font-size: 14px;
+}
+.qnaWrite-sub>input{
+    width: 370px;
+    height: 28px;
+    padding-left: 5px;
+}

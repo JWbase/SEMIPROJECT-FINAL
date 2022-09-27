@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.qna-content{
+    padding-bottom: 30px;
+}
+.qna-table{
+    width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.qna-title>th{
+	font-family: ns-bold;
+}
+.qna-title> th{
+    height: 40px;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+}
+.qna-answer{
+    height: 35px;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+    font-family: ns-light;
+}
+.qna-answer>td>a{
+    text-decoration: none;
+    color: black;
+}
+.qna-page{
+    height: 50px;
+    line-height: 50px;
+}
+.qna-top-title{
+    float: left;
+}
+.qna-top-wrap{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+.qna-top-wrap>div>a{
+    display: block;
+    float: right;
+    width: 100px;
+    line-height: 26px;
+    height: 30px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-weight: 600;
+}
+.qna-top-wrap>div>a:hover{
+    background-color: #5865f5;
+    color: white;
+}
+.qna-answer>td:nth-child(3):hover{
+    text-decoration: underline;
+}

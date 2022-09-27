@@ -1,0 +1,182 @@
+@charset "UTF-8";
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+.qna-views-content {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: white;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.qna-views-table {
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.qna-views-table td {
+    border: 1px solid rgba(1, 1, 1, 0.3);
+    height: 30px;
+}
+
+.qna-views-top {
+    background-color: black;
+    height: 40px;
+    color: white;
+    font-family: ns-bold;
+}
+
+.qna-views-qnacontent {
+    height: 500px;
+}
+
+.qnaBtn {
+    height: 50px;
+    line-height: 50px;
+}
+
+.qnaUpdateBtn {
+    border: 1px solid rgba(1, 1, 1, 0.3);
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    margin: 0 10px;
+    font-family: ns-bold;
+}
+
+.qnaUpdateBtn>a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    height: 30px;
+}
+
+.qnaUpdateBtn>a:hover {
+    background-color: #5865f5;
+    color: white;
+}
+
+.commentBox {
+    width: 100%;
+    max-width: 998px;
+    margin: 15px auto;
+    border: 1px solid black;
+    height: 80px;
+}
+
+.comment-wrap div {
+    overflow: hidden;
+}
+
+.qnacomm-icon {
+    width: 100px;
+    text-align: center;
+    float: left;
+    font-size: 60px;
+    position: relative;
+    left: 55px;
+}
+
+.comment-user-info {
+    width: 120px;
+    text-align: center;
+    border-right: 1px solid rgba(1, 1, 1, 0.3);
+    float: left;
+}
+
+.comment-user-info p {
+    margin: 12px 0;
+}
+
+.comment-text {
+    height: 80px;
+    line-height: 80px;
+    float: left;
+}
+
+#comment-textarea {
+    width: 665px;
+    height: 73px;
+    padding-top: 5px;
+    padding-left: 5px;
+    resize: none;
+    font-size: 16px;
+    outline: none;
+    position: relative;
+    top: -1px;
+}
+
+.commentBtn {
+    padding-left: 5px;
+}
+
+.commentBtn>button {
+    width: 120px;
+    height: 80px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.info-icon {
+    width: 70px;
+    text-align: center;
+    float: left;
+    font-size: 60px;
+    padding-left: 10px;
+}
+
+.comment-textBox {
+    width: 644px;
+    position: relative;
+    top: -1px;
+    height: 75px;
+    resize: none;
+    outline: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    overflow: auto;
+}
+
+.comm-user-info {
+    width: 140px;
+    text-align: center;
+    border-right: 1px solid rgba(1, 1, 1, 0.3);
+    float: left;
+    font-family: ns-m;
+}
+
+.comm-user-info>p:first-child {
+    margin-bottom: 0;
+}
+
+.comm-user-info>p:last-child {
+    margin: 0;
+}
+
+.qnaComm-btn>div {
+    float: left;
+    border: 1px solid black;
+    width: 60px;
+    text-align: center;
+    height: 78px;
+    line-height: 78px;
+    font-family: ns-m;
+}
+
+.qnaComm-btn>div>a {
+    display: block;
+    width: 60px;
+    text-decoration: none;
+    color: black;
+    height: 78px;
+}

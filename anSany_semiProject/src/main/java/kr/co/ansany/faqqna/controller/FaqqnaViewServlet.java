@@ -1,0 +1,66 @@
+package kr.co.ansany.faqqna.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import kr.co.ansany.faqqna.model.service.FaqqnaService;
+import kr.co.ansany.faqqna.model.vo.Faqqna;
+import kr.co.ansany.faqqna.model.vo.FaqqnaViewData;
+
+/**
+ * Servlet implementation class FaqqnaViewServlet
+ */
+@WebServlet(name = "FaqqnaView", urlPatterns = { "/faqqnaView.do" })
+public class FaqqnaViewServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public FaqqnaViewServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//인코딩
+		request.setCharacterEncoding("utf-8");
+		//값추출
+		int qnaNo = Integer.parseInt(request.getParameter("qnaNo"));
+		//비즈니스로직
+		FaqqnaService service = new FaqqnaService();
+		FaqqnaViewData fvd = service.selectOneQna(qnaNo);
+		
+		//결과처리
+		if(fvd== null) {
+			RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/common/msg.jsp");
+			request.setAttribute("title", "조회실패");
+			request.setAttribute("msg", "문의사항이 존재하지 않습니다.");
+			request.setAttribute("icon", "error");
+			view.forward(request, response);
+		} else {
+			RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/faqqna/faqqnaView.jsp");
+			request.setAttribute("faq", fvd.getF());
+			request.setAttribute("commentList", fvd.getFc());
+			view.forward(request, response);
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}
